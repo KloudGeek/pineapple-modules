@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>Welcome to PoolCleaner</mat-card-title>
+    <mat-card-content>
+	<button mat-flat-button color="accent"
+		(click)="doAPIAction();">
+		Request to API
+	</button>
+
+	<br/>
+	<span>The version is: {{apiResponse}}</span>
+	<br/>
+    </mat-card-content>
+</mat-card>

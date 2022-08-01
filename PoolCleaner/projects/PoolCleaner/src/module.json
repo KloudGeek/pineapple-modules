@@ -1,0 +1,10 @@
+{
+    "name": "PoolCleaner",
+    "title": "Pool Cleaner",
+    "description": "Remove garbage entries from AP Pool and optionally sort the contents.",
+    "version": "1.0",
+    "author": "SpongeBob",
+    "firmware_required": "1.0.0",
+    "devices": ["wifipineapplemk7"]
+}
+
