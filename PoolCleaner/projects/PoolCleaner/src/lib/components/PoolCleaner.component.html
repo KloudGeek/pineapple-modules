@@ -1,13 +1,18 @@
 <mat-card>
     <mat-card-title>Welcome to PoolCleaner</mat-card-title>
     <mat-card-content>
+	<mat-form-field>
+		<mat-label>Message to send to Module</mat-label>
+		<input matInput [(ngModel)]="userInput" />
+	</mat-form-field>
+
 	<button mat-flat-button color="accent"
 		(click)="doAPIAction();">
-		Request to API
+		Request to Module
 	</button>
 
 	<br/>
-	<span>The version is: {{apiResponse}}</span>
+	<span>The API response was: {{ apiResponse }}</span>
 	<br/>
     </mat-card-content>
 </mat-card>

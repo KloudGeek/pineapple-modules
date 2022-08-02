@@ -9,10 +9,15 @@ import { ApiService } from '../services/api.service';
 
 export class PoolCleanerComponent implements OnInit {
     constructor(private API: ApiService) { }
-	apiResponse = 'Press the button above to get the version.';
+	userInput = '';
+	apiResponse = 'Press the button above to get the response.';
 	doAPIAction(): void {
-		this.API.APIGet('/api/status', (response) => {
-			this.apiResponse = response.versionString;
+		this.API.request({
+			module: 'PoolCleaner',
+			action: 'hello_world',
+			user_input: this.userInput
+		}, (response) => {
+			this.apiResponse = response;
 		})
 	}
 
