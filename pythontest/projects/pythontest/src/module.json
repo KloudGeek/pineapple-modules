@@ -1,0 +1,10 @@
+{
+    "name": "pythontest",
+    "title": "pythontest",
+    "description": "",
+    "version": "2.3",
+    "author": "KloudGeek",
+    "firmware_required": "2.0.0",
+    "devices": ["wifipineapplemk7"]
+}
+

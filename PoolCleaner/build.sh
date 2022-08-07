@@ -71,7 +71,7 @@ package() {
 
 copy_to_device() {
     echo "[*] Copying module to WiFi Pineapple via SCP"
-    scp -r dist/$MODULENAME root@10.10.1.66:/pineapple/modules
+    scp -r dist/$MODULENAME root@110.10.1.66:/pineapple/modules
 }
 
 main() {

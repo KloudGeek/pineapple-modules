@@ -1,0 +1,10 @@
+{
+    "name": "MyModule",
+    "title": "My Module",
+    "description": "This is my first module!",
+    "version": "1.6",
+    "author": "SpongeBob",
+    "firmware_required": "2.0.0",
+    "devices": ["wifipineapplemk7"]
+}
+
