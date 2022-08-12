@@ -12,8 +12,8 @@ module = Module('py2', logging.DEBUG)
  
 @module.handles_action('hello_world') 
 def hello_world(request: Request): 
-#    return { opkg.check_if_installed('sqlite3') }
-    return 'testing'
+    status = opkg.check_if_installed('sqlite3', module.logger)
+    return 'Status: ', status
 
 if __name__ == '__main__': 
     module.start()
